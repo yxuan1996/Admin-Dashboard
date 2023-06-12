@@ -4,18 +4,11 @@
     height: 100vh;
 }
 
-.flex-top {
-    flex: 1;
-}
-
-.flex-bottom {
-    flex: 5;
-}
-
 .main-grid {
     display:grid;
     grid-template-columns: 3fr 3fr;
     grid-template-rows: 2fr 2fr 2fr;
+
 }
 
 .grid-item {

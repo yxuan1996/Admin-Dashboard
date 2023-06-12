@@ -18,7 +18,11 @@ python -m http.server 8000
 - JS
 
 #### Layout
+Throughout this project, we will strive to use Tailwind and DaisyUI components. This is to minimize clutter in the CSS file and make the project more readable. 
+
 We start by creating a vertical sidebar with collapsible menu items. The sidebar should be responsive and collapse on mobile views. 
+
+We use Flexbox and Grid to position the main layout. We start from the outermost layout and go inward using nested flexbox and grid. 
 
 https://dev.to/codeply/bootstrap-5-sidebar-examples-38pb
 
