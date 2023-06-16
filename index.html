@@ -10,15 +10,15 @@
     <link href="./style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container mx-auto max-w-full">
         <div class="row flex-nowrap">
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark sidebar">
 
-                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <a href="/" class="flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                   <span class="fs-5 d-none d-sm-inline">Dashboard</span>
                 </a>
 
-                <ul class="d-flex flex-column menu bg-base-200 w-full rounded-box">
+                <ul class="flex flex-column menu bg-base-200 w-full rounded-box">
                     <li>
                       <a>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
@@ -41,20 +41,61 @@
             </div>
 
             <div class="col">
-              <div class="d-flex flex-column bd-highlight mb-3">
-                <div class="flex flex-column basis-1/6 bg-primary">
-                  <div class="d-flex flex-row justify-content-between">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
+              <div class="flex flex-column bd-highlight mb-3">
+                <div class="flex flex-column basis-1/6">
+                  <div class="flex flex-row justify-between items-center px-3 pt-3">
+                    <div class="flex flex-row justify-start gap-2 w-3/5">
+
+                      <div> 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>                
+                      </div>
+                      <div class="w-full basis-full">
+                        <input type="text" placeholder="Search here..." class="input input-bordered input-primary input-sm w-full max-w-xs h-full" />
+                      </div>
+
+                    </div>
+                    <div class="flex flex-row justify-end gap-4 w-2/5">
+
+                      <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
+                        </svg>                     
+                      </div>
+                      <div class="">
+                        <img
+                        src="./src/icons/hamster-svgrepo-com.svg"
+                        alt="Hamster User Icon"
+                        height="30"
+                        width="30" />
+                      </div>
+                      <div class="">Morgan Oakley</div>
+
+                    </div>
+
+                    
+                    
                   </div>
        
-                  <div class="d-flex flex-row justify-content-between">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
+                  <div class="flex flex-row justify-between">
+                    <div class="flex items-center px-4 py-3 w-3/5">
+                      <img 
+                      src="./src/icons/hamster-svgrepo-com.svg" 
+                      alt="Hamster User Icon"
+                      height="40"
+                      width="40" />
+                      <div class="px-2">
+                        <p>Hi there,</p>
+                        <strong>Morgan Oakley (@Morgan)</strong>
+                      </div>
+                    </div>
+                    <div class='flex justify-around items-center w-2/5'>
+                      <div><button class="btn btn-info rounded-full btn-sm w-20">New</button></div>
+                      <div><button class="btn btn-info rounded-full btn-sm w-20">Upload</button></div>
+                      <div><button class="btn btn-info rounded-full btn-sm w-20">Share</button></div>
+                    </div>
+                    
                   </div>
                 </div>
                 <div class="flex flex-row basis-5/6 bg-secondary">

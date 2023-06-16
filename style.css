@@ -4,13 +4,14 @@
     height: 100vh;
 }
 
-.main-grid {
+/* .main-grid {
     display:grid;
     grid-template-columns: 3fr 3fr;
     grid-template-rows: 2fr 2fr 2fr;
 
-}
+} */
 
 .grid-item {
     border: 2px solid red;
 }
+
