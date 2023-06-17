@@ -26,3 +26,7 @@ We use Flexbox and Grid to position the main layout. We start from the outermost
 
 https://dev.to/codeply/bootstrap-5-sidebar-examples-38pb
 
+#### Icons and Images
+We use SVG for icons and images. There are 2 ways to insert SVG:
+- Directly into HTML. This can get messy, a better way to organize would be this: https://stackoverflow.com/questions/27954250/moving-to-svg-icons-how-to-separate-them-from-the-code
+- Download SVG file and import as an image
