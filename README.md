@@ -24,7 +24,23 @@ We start by creating a vertical sidebar with collapsible menu items. The sidebar
 
 We use Flexbox and Grid to position the main layout. We start from the outermost layout and go inward using nested flexbox and grid. 
 
-https://dev.to/codeply/bootstrap-5-sidebar-examples-38pb
+#### Fixed Sidebar, Scrollable Content Box
+To ensure that the sidebar is fixed, we use fixed positioning. However, this ruins other layouts, since bootstrap columns, flexbox and grid all use relative positionning. 
+
+Solution: If we are using bootstrap columns, use fixed positioning for the sidebar, then apply an offset to the scrollable content. 
+
+```HTML
+<div class="row">
+    <div class="col-lg-3" style="position:fixed">
+        Fixed content
+    </div>
+    <div class="col-lg-9 col-lg-offset-3">
+        Normal scrollable content
+    </div>
+</div>
+```
+
+Source: https://stackoverflow.com/questions/21868610/make-column-fixed-position-in-bootstrap
 
 #### Icons and Images
 We use SVG for icons and images. There are 2 ways to insert SVG:

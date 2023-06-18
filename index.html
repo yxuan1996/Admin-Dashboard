@@ -10,10 +10,10 @@
     <link href="./style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="mx-auto max-w-full">
+    <div class="mx-auto max-w-full h-screen">
         <div class="row gx-0 flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-sky-500 flex flex-column py-2 px-3">
-              <div class="flex-grow-1">
+            <div class="col-auto col-md-3 col-xl-2 position-fixed bg-sky-500 flex flex-column py-2 px-3">
+              <div class="flex-grow-1 bg-sky-500">
 
                 <a href="/" class="flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                   <span class="fs-5 d-none d-sm-inline-flex gap-2">
@@ -49,7 +49,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col-md-9 col-xl-10 offset-md-3 offset-xl-2">
               <div class="flex flex-column bd-highlight mb-3">
                 <div class="flex flex-column basis-1/6">
                   <div class="flex flex-row justify-between items-center px-3 pt-3">
@@ -107,7 +107,7 @@
                     
                   </div>
                 </div>
-                <div class="flex flex-row basis-5/6 bg-secondary">
+                <div class="flex flex-row basis-5/6 bg-secondary overflow-y-auto overscroll-contain">
                   <div class="w-75 p-3">
                     <div>
                       <div class="text-lg"><strong>Your Projects</strong></div>
